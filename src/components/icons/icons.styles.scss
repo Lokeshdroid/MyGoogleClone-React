@@ -1,0 +1,35 @@
+@import "../../sass/main";
+
+.grid-icon {
+  width: 15px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  path {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+  &:hover {
+    path {
+      fill: rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+.icon__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-icon {
+  width: 20px;
+  height: 25px;
+  path {
+    fill: rgba($text, 0.5);
+  }
+}
+
+.mic-icon {
+  width: 30px;
+  height: 25px;
+}

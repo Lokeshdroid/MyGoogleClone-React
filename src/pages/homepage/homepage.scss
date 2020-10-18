@@ -1,0 +1,91 @@
+@import "../../sass/main";
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 2rem;
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    &:not(:last-child) {
+      padding: 0rem 1rem;
+    }
+    &:last-child {
+      padding-left: 1rem;
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      width: 3.2rem;
+      height: 3.2rem;
+      cursor: pointer;
+      border-radius: 50%;
+      img {
+        max-width: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__link {
+    color: $nav-color;
+    font-size: 1.3rem;
+
+    &:hover,
+    &:focus {
+      opacity: 0.85;
+      text-decoration: underline;
+    }
+  }
+}
+
+.homepage {
+  min-height: 90vh;
+
+  &__body {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media only screen and(max-width:950px) {
+      width: 80%;
+    }
+    @media only screen and(max-width:750px) {
+      width: 100%;
+    }
+    @media only screen and(max-width:500px) {
+      margin-top: 5rem;
+    }
+  }
+}
+
+.logobox {
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  @media only screen and(max-width:600px) {
+    width: 25rem;
+  }
+  @media only screen and(max-width:400px) {
+    width: 20rem;
+  }
+  img {
+    max-width: 100%;
+  }
+}
